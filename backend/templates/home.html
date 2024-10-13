@@ -1,5 +1,81 @@
 {% extends "base.html"%}
 {% block title%}Home{% endblock %}
 {% block content%}
-<p>Hello This is the Home Page</p>
+<style>
+    .Home-div{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .Home-div img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .null{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.584);
+    }
+
+    .Main-body{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        padding-top: 100px;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Header-text{
+        text-align: center;
+        width: 80%;
+        font-size: 64px;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .Header-text1{
+        font-size: 32px;
+        color: white;
+        font-family: monospace;
+    }
+
+    .Main-body button{
+        width: 450px;
+        height: 80px;
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        background-image: linear-gradient(to right,rgb(0, 255, 55),rgb(13, 0, 255));
+    }
+
+    .Main-body button:hover{
+        background-image: linear-gradient(to right,rgb(255, 0, 85),rgb(255, 255, 0));
+    }
+</style>
+
+<div class='Home-div'>
+    <img src='https://img.freepik.com/premium-photo/creative-writing-concept-hand-holding-pen-notebook-blurred-desk-background_762139-9371.jpg?ga=GA1.1.1077894895.1725607898&semt=ais_hybrid-rr-similar'/>
+    <div class='null'></div>
+
+    <div class='Main-body'>
+        <p class='Header-text'>
+            Write What You Think! <br>
+            <span class='Header-text1'>"Dive into a World of Imagination and Inspiration.  Your Gateway to Thoughtful Content..."</span> 
+        </p>
+
+        <button>Join Us For Free</button>
+    </div>
+  
+</div>
 {% endblock %}
